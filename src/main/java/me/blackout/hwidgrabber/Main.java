@@ -7,7 +7,7 @@ import java.security.MessageDigest;
 
 public class Main {
     private static String hwid;
-
+    
     public static void main(String[] args) throws UnsupportedLookAndFeelException, ClassNotFoundException, InstantiationException, IllegalAccessException {
         UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 
@@ -29,8 +29,9 @@ public class Main {
 
     public static String getHWID() {
         try {
-            String toEncrypt =  System.getProperty("user.name") + java.net.InetAddress.getLocalHost().getHostName() + "orcrist";
-            MessageDigest md = MessageDigest.getInstance("SHA256");
+            String toEncrypt =  System.getProperty("user.name") + java.net.InetAddress.getLocalHost().getHostName() + "Your String Here";
+            //Set Your Encrypter
+            MessageDigest md = MessageDigest.getInstance("");
             md.update(toEncrypt.getBytes());
             StringBuffer hexString = new StringBuffer();
 
