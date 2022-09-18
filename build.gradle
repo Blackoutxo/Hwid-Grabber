@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'orcristdevelopment'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
+
+jar {
+    manifest {
+        attributes("Main-Class": "me.blackout.hwidgrabber.Main")
+    }
+}
