@@ -29,7 +29,7 @@ public class Main {
 
     public static String getHWID() {
         try {
-            String toEncrypt =  System.getProperty("user.name") + java.net.InetAddress.getLocalHost().getHostName() + "Your String Here";
+            String toEncrypt =  System.getProperty(" ") + java.net.InetAddress.getLocalHost().getHostName();
             //Set Your Encrypter
             MessageDigest md = MessageDigest.getInstance("");
             md.update(toEncrypt.getBytes());
