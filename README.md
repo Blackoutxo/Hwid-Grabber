@@ -1,2 +1,2 @@
 # Hwid Grabber
-### Grabs your encrypted HardWare-ID
+### Grabs your HardWare-ID in an encrypted form
